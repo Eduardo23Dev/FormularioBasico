@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulario de Pesquisa</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div><h1>Formulário de Pesquisa freeCodeCamp</h1></div>
+        <div>
+          <p>
+            Obrigado por dedicar seu tempo para nos ajudar a melhorar a
+            plataforma
+          </p>
+        </div>
+      </header>
+      <form action="" method="post" class="FormContainer">
+        <div class="formGroup">
+          <div class="formContent">
+            <label for="name">Nome</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Digite seu nome"
+              required
+            />
+          </div>
+
+          <div class="formContent">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Digite seu email"
+              required
+            />
+          </div>
+
+          <div class="formContent">
+            <label for="age">Idade</label>
+            <input
+              type="number"
+              min="10"
+              max="99"
+              placeholder="Idade"
+              required
+            />
+          </div>
+
+          <div class="formContent">
+            <label for="current"
+              >Qual opção melhor descreve sua função atual?</label
+            >
+            <select name="" id="current" required>
+              <option disabled selected value>Selecione uma opção</option>
+              <option value="student">Estudante</option>
+              <option value="job">Trabalha em tempo integral</option>
+              <option value="learner">Estuda em tempo integral</option>
+              <option value="preferNo">Prefere não dizerl</option>
+              <option value="other">Outro</option>
+            </select>
+          </div>
+          <div class="formRadio">
+            <p>Você recomendaria o freeCodeCamp a um amigo?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="radioControll"
+                checked
+              />Com certeza</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="radioControll"
+              />Talvez</label
+            >
+
+            <label
+              ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="radioControll"
+              />Não tenho certeza</label
+            >
+          </div>
+
+          <div class="formContent">
+            <label for="current"
+              >Qual é o seu recurso favorito do freeCodeCamp?</label
+            >
+            <select name="" id="current" required>
+              <option disabled selected value>Selecione uma opção</option>
+              <option value="Challeng">Desafios</option>
+              <option value="proj">Projetos</option>
+              <option value="Comunity">Comunidade</option>
+              <option value="O.Source">Open Source</option>
+            </select>
+          </div>
+
+          <div class="formCheck">
+            <p>
+              O que você gostaria de ver melhorado?
+              <small>(Marque todos os que se aplicam)</small>
+            </p>
+            <label>
+              <input
+                name="FEproj"
+                value="FEproj"
+                type="checkbox"
+                class="checkControll"
+              />Projetos Front-end</label
+            >
+            <label>
+              <input
+                name="BEproj"
+                value="maybe"
+                type="checkbox"
+                class="checkControll"
+              />Projetos Back-end</label
+            >
+
+            <label
+              ><input
+                name="DateVisu"
+                value="DateVisu"
+                type="checkbox"
+                class="checkControll"
+              />Visualização de Codigo</label
+            >
+
+            <label
+              ><input
+                name="challeng"
+                value="challeng"
+                type="checkbox"
+                class="checkControll"
+              />Desafios</label
+            >
+
+            <label
+              ><input
+                name="o.SourceCom"
+                value="o.SourceCom"
+                type="checkbox"
+                class="checkControll"
+              />Comunidade de codigo aberto</label
+            >
+
+            <label
+              ><input
+                name="gitRoom"
+                value="gotRoom"
+                type="checkbox"
+                class="checkControll"
+              />Salas de ajuda do Gitter</label
+            >
+
+            <label
+              ><input
+                name="Videos"
+                value="Videos"
+                type="checkbox"
+                class="checkControll"
+              />Videos</label
+            >
+
+            <label
+              ><input
+                name="Wiki"
+                value="Wiki"
+                type="checkbox"
+                class="checkControll"
+              />Wiki</label
+            >
+
+            <label
+              ><input
+                name="Forum"
+                value="Forum"
+                type="checkbox"
+                class="checkControll"
+              />Forum</label
+            >
+
+            <label
+              ><input
+                name="addCourse"
+                value="addCourse"
+                type="checkbox"
+                class="checkControll"
+              />Cursos adicionais</label
+            >
+          </div>
+
+          <div class=".formContent">
+            <p>Algum comentário ou sugestão?</p>
+            <textarea
+              name="textArea"
+              id=""
+              class="inputTexArea"
+              placeholder="Digite aqui..."
+            ></textarea>
+          </div>
+
+          <button type="submit" id="submit" class="inputbutton">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
